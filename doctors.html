@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Doctors | CityCare Hospital</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+}
+
+/* Hero Section */
+.hero{
+    height:50vh;
+    background: linear-gradient(rgba(180, 101, 101, 0.589), rgb(212, 29, 29), rgb(153, 105, 105), rgb(212, 29, 29)), url("images/doctors-banner.jpg") center/cover;
+     display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* Section */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.section-title{
+    text-align:center;
+    color:#b82121;
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.section-text{
+    text-align:center;
+    color:#000000;
+    margin-bottom:40px;
+}
+
+/* Doctor Cards */
+
+.doctor-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgb(255, 255, 255);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgb(182, 17, 17);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.content{
+    padding:20px;
+    text-align:center;
+}
+
+.content h3{
+    color:#b62020;
+}
+
+.speciality{
+    color:#db4040;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.info{
+    color:#000000;
+    margin-bottom:20px;
+}
+
+button{
+    background:
+    33333#8f3535;
+    color:rgb(0, 0, 0);
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:3s;
+}
+
+button:hover{
+    background:#a72929;
+}
+
+/* CTA */
+
+.cta{
+    background:#a12222 ;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+    margin-top:70px;
+}
+
+.cta h2{
+    margin-bottom:15px;
+    font-size:35px;
+}
+
+.cta p{
+    margin-bottom:25px;
+}
+
+.cta button{
+    background:#ffffff;
+
+}
+
+.cta button:hover{
+    background:#ffffff;
+}
+
+/* Footer */
+
+footer{
+    background:#c72424;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Hero -->
+
+<section class="hero">
+<div>
+<h1>Meet Our Doctors</h1>
+<p>Experienced professionals dedicated to your health and wellbeing.</p>
+</div>
+</section>
+
+<!-- Doctors -->
+
+<section class="container">
+
+<h2 class="section-title">Our Medical Team</h2>
+
+<p class="section-text">
+Our doctors provide compassionate, patient-centered healthcare using
+modern medical technology and years of professional experience.
+</p>
+
+<div class="doctor-grid">
+
+<div class="card">
+<img src="image/prl1.jpg" alt="Doctor">
+<div class="content">
+<h3>Dr. John Smith</h3>
+<p class="speciality">Cardiologist</p>
+<p class="info">
+12 Years Experience<br>
+
+</p>
+<button > <a href="appointment.html">Book Appointment</a></button>
+</div>
+</div>
+
+<div class="card">
+<img src="image/prl2.jpg" alt="Doctor">
+<div class="content">
+<h3>Dr. Sarah Johnson</h3>
+<p class="speciality">Pediatrician</p>
+<p class="info">
+10 Years Experience<br>
+Mon - Sat
+</p>
+<button > <a href="appointment.html">Book Appointment</a></button>
+</div>
+</div>
+
+<div class="card">
+<img src="image/prl3.jpg" alt="Doctor">
+<div class="content">
+<h3>Dr. Michael Brown</h3>
+<p class="speciality">General Surgeon</p>
+<p class="info">
+15 Years Experience<br>
+Mon - Fri
+</p>
+<button > <a href="appointment.html"></a>Book Appointment</a></button>
+</div>
+</div>
+
+<div class="card">
+<img src="image/prl2.jpg" alt="Doctor">
+<div class="content">
+<h3>Dr. Emily Davis</h3>
+<p class="speciality">Neurologist</p>
+<p class="info">
+8 Years Experience<br>
+Tue - Sat
+</p>
+<button > Book Appointment</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- Call to Action -->
+
+<section class="cta">
+
+<h2>Your Health Comes First</h2>
+
+<p>
+Book an appointment with one of our qualified doctors today and receive quality healthcare.
+</p>
+
+<button> <a href="appointment.html">Book Appointment</a></button>
+
+</section>
+
+<footer>
+<p>&copy; 2026 CM Private Hospital. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+

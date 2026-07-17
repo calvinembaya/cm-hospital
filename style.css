@@ -1,0 +1,76 @@
+  section.patient-care {
+    text-decoration: slidein 15s ease-in-out infinite;
+    background: rgb(158, 21, 21);
+    padding: 50px;
+    color: #ffffff;
+    text-align: center;
+    background-image: url("image/images (4).jpeg");
+    animation: changeBackground 15s ease-in-out infinite;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#changing-word {
+    color: #fff;
+    font-weight: bold;
+    transition: 1s;
+}
+nav {
+    background-color: #961212;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3be706;
+}
+
+nav a.active {
+    color: #ffa600;
+}
+
+
+@keyframes changeBackground {
+    0% { background-image: url("image/images (1).jpeg");}
+    33% { background-image: url("image/images (6).jpeg"); }
+    66% { background-image: url("image/images (4).jpeg"); }
+    100%{ background-image: url("image/images(11).jpg");}
+}
+
+
+/*Mobile responsiveness */
+@media (max-width: 768px) {
+    section.patient-care {
+        padding: 20px;
+        background-size: cover;
+    }                                   
+    nav {
+        padding: 5px;
+    }
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+}   
+
+
+/*contact*/
+ section.contact-care {
+    text-decoration: slidein 15s ease-in-out infinite;
+    background: rgb(158, 21, 21);
+    padding: 50px;
+    color: #ffffff;
+    text-align: center;
+    background-image: url("image/images (4).jpeg");
+    animation: changeBackground 15s ease-in-out infinite;
+    background-size: cover;
+    background-position: center;
+}

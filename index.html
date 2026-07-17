@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM Private Hospital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    p{
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+        font-weight: bold;
+    }
+    h2{
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: rgb(175, 23, 23);
+    }
+    div.image-container {
+        text-align: center;
+        margin-top: 20px;
+        margin:auto;
+        width: auto;
+        height: auto;
+    }
+    h4{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: rgb(182, 33, 33);
+    }
+
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f8fc;
+}
+
+/* SECTION */
+.mvv-section{
+    padding:80px 10%;
+    background:linear-gradient(135deg,#ffffff,#eef6ff);
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h1{
+    font-size:2.8rem;
+    color:#aa2020;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#000000;
+    font-size:1.1rem;
+}
+
+/* TOP CARDS */
+.top-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-bottom:50px;
+}
+
+.card{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgb(143, 59, 59);
+    transition:0.4s ease;
+    animation:fadeUp 1s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgb(202, 69, 69);
+}
+
+.card i{
+    font-size:3rem;
+    color:#1976d2;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#911616;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#020000;
+    line-height:1.7;
+}
+
+/* VALUES */
+.values-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.values-title h2{
+    color:#b4210e;
+    font-size:2rem;
+}
+
+.values-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.value-card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.value-card:hover{
+    background:#be2525;
+    color:white;
+    transform:scale(1.05);
+}
+
+.value-card:hover i,
+.value-card:hover h3{
+    color:white;
+}
+
+.value-card i{
+    font-size:2.5rem;
+    color:#d22f19;
+    margin-bottom:15px;
+}
+
+.value-card h3{
+    color:#b42816;
+    margin-bottom:10px;
+}
+
+.value-card p{
+    line-height:1.6;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .section-title h1{
+        font-size:2rem;
+    }
+
+    .card,
+    .value-card{
+        padding:20px;
+    }
+}
+.ourteam-section{
+    padding:80px 10%;
+    background:linear-gradient(135deg,#ffffff,#eef6ff);
+}
+
+.team-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h1{
+    font-size:2.8rem;
+    color:#aa2020;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#000000;
+    font-size:1.1rem;
+}
+.ourteam{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.team{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+.team i{
+    font-size:2.5rem;
+    color:#d22f19;
+    margin-bottom:15px;
+}
+.team h3{
+    color:#b42816;
+    margin-bottom:10px;
+}
+
+.team p{
+    line-height:1.6;
+}
+</style>
+<body>
+
+<header>
+    <h1>CM Private Hospital</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="contact.html">Contact</a>
+        <a href="location.html">Location</a>
+    </nav>
+</header> 
+
+
+
+
+
+<section class="patient-care">
+    
+    <h3>Your Health, Our Priority</h3>
+    <p>Professional healthcare services available 24/7.</p>
+    <h3>we provide <span id="changing-word">Care</span></h3>
+    <script>
+        const words =["Care", "Treatment", "Diagnosis", "Emergency Services", "Health Solutions"] ;
+        let index = 0 ;
+        setInterval(() => {
+            index =(index + 1 ) %words.length;
+
+    document.getElementById("changing-word").textContent =words[index] ;
+        },5000);
+    </script>
+
+    <button><a href="appointment.html">Book Appointment</a></button>
+</section>
+
+
+
+
+
+
+<section class="team-section">
+
+    <div class="section-title">
+        <h1>Mission, Vision & Core Values</h1>
+        <p>Committed to excellence, compassion, and quality healthcare.</p>
+    </div>
+
+    <!-- Mission & Vision -->
+    <div class="top-cards">
+
+        <div class="card">
+            <i class="fas fa-heart-pulse"></i>
+            <h2>Our Mission</h2>
+            <p>
+                To provide accessible, compassionate, and high-quality
+                healthcare services that improve the health and well-being
+                of our patients and communities.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-eye"></i>
+            <h2>Our Vision</h2>
+            <p>
+                To be a trusted leader in healthcare, recognized for
+                excellence in patient care, innovation, and community
+                health advancement.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Values -->
+    <div class="values-title">
+        <h2>Our Core Values</h2>
+    </div>
+
+    <div class="values-grid">
+
+        <div class="value-card">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Compassion</h3>
+            <p>Treating every patient with kindness and empathy.</p>
+        </div>
+
+        <div class="value-card">
+            <i class="fas fa-award"></i>
+            <h3>Excellence</h3>
+            <p>Delivering the highest standards of healthcare.</p>
+        </div>
+
+        <div class="value-card">
+            <i class="fas fa-scale-balanced"></i>
+            <h3>Integrity</h3>
+            <p>Maintaining honesty and ethical conduct.</p>
+        </div>
+
+        <div class="value-card">
+            <i class="fas fa-user-doctor"></i>
+            <h3>Patient First</h3>
+            <p>Putting patients' needs at the center of care.</p>
+        </div>
+
+        <div class="value-card">
+            <i class="fas fa-users"></i>
+            <h3>Teamwork</h3>
+            <p>Working together to achieve better outcomes.</p>
+        </div>
+
+        <div class="value-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Innovation</h3>
+            <p>Embracing modern medical technology and ideas.</p>
+        </div>
+
+        <div class="value-card">
+            <i class="fas fa-briefcase-medical"></i>
+            <h3>Professionalism</h3>
+            <p>Maintaining the highest standards of practice.</p>
+        </div>
+
+        <div class="value-card">
+            <i class="fas fa-globe-africa"></i>
+            <h3>Community Care</h3>
+            <p>Improving the health of the communities we serve.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="ourteam-section">
+    <div class="ourteam">
+
+    <div class="team-title">
+        <h2>Our Team</h2>
+    </div>
+<div class="team">
+            <i class="our-team"></i>
+            <h3>Dr. John Doe - Chief Medical Officer</h3>
+            <p>
+               <img src="image/prl1.jpg" alt=" Team Image" style="width: 100%; max-width: 250px; height: auto; border-radius: 10px;">
+            </p>
+        </div>
+
+    </div>
+<div class="team">
+            <i class="our-team"></i>
+            <h3>Dr. Jane Smith - attending physician</h3>
+            <p><img src="image/prl3.jpg" alt="  Team Image" style="width: 100%; max-width: 250px; height: auto; border-radius: 10px;">
+            </p>
+        </div>
+
+
+</div>
+        </section>
+
+<div class="footer-content">
+
+<footer>
+        <p style="text-align: center;color: #b32727;">© 2026 CM Private Hospital</p>
+    </footer>
+</div>
+
+
+</body>
+</html>
